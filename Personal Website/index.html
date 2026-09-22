@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul id="nav-links">
+            <li><a href="#about" class="nav-item active">About</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Header -->
+    <header>
+        <h1>Hello, I'm <span id="user-name">Emmanuel Darkey</span></h1>
+        <p>Developer & Student</p>
+        <button id="contact-btn">Get In Touch</button>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+<section id="about">
+    
+    <!-- Profile Photo -->
+    <img src="images/profile.jpg" alt="Emmanuel Darkey" class="profile-pic">
+
+            <p>Welcome to my personal website! I enjoy building software applications, exploring cloud development environments, and working on interactive projects. I am constantly learning new programming tools and solving creative technical challenges.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">HTML & CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">GitHub / Codespaces</span>
+                <span class="skill-tag">Software Development</span>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+        <!-- Project 1: School App -->
+        <div class="project-card">
+            <img src="images/projects/school-app.png" alt="My works " class="project-img">
+            <h3>School Management Application</h3>
+            <p>A Python application created to streamline student administrative tasks, record keeping, and school data management.</p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Desktop App</span>
+            </div>
+        </div>
+
+        <!-- Project 2: Adaptations -->
+        <div class="project-card">
+            <img src="images/projects/adaptations.jpg" alt="Biological Adaptations Study" class="project-img">
+            <h3>Biological Adaptations Study</h3>
+            <p>A scientific visualization project illustrating plant and animal adaptations in diverse habitats using detailed HB pencil sketches and research.</p>
+            <div class="project-tags">
+                <span class="tag">Biology</span>
+                <span class="tag">Scientific Illustration</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to connect or discuss development ideas!</p>
+            <p class="contact-info"><strong>Email:</strong> emmanuelxosekofidarkey@gmail.com</p>
+            <p class="contact-info"><strong>GitHub:</strong> github.com/Xoseemmanuel</p>
+            
+            <form id="contact-form">
+                <input type="text" id="visitor-name" placeholder="Enter Your Name" required>
+                <input type="email" id="visitor-email" placeholder="Your Email" required>
+                <textarea id="visitor-message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-response"></p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> [Emmanuel Darkey]. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

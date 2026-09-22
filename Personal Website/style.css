@@ -1,0 +1,246 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+/* Navigation */
+nav {
+    background: #1e293b;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 0.2rem;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* Hero Header */
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+#contact-btn {
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-btn:hover {
+    background: #0284c7;
+    color: #fff;
+}
+
+/* Container & Sections */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    color: #0f172a;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+/* Skills Tags */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.skill-tag {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Projects Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: #f8fafc;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+}
+
+.contact-info {
+    margin-top: 0.5rem;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    background: #0f172a;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#contact-form button:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+#form-response {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #16a34a;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #0f172a;
+    color: #94a3b8;
+    margin-top: 2rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+}
+/* Profile Picture Styling */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;         /* Makes image circular */
+    object-fit: cover;          /* Prevents image stretching */
+    display: block;
+    margin: 1.5rem auto;        /* Centers photo with vertical spacing */
+    border: 3px solid #38bdf8;  /* Accent border color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+/* Fix image dimensions and cropping */
+.project-img {
+    width: 100%;           /* Fills card width */
+    height: 200px;          /* Sets exact uniform height for all project photos */
+    object-fit: cover;      /* Crops and centers photo perfectly without squishing */
+    border-radius: 6px;     /* Rounds corners slightly */
+    margin-bottom: 1rem;
+    display: block;
+}
